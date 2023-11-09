@@ -17,7 +17,7 @@
 .menu {
   display: flex;
   margin: 0px 24px 0px 0px;
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,7 @@
   background-color: transparent;
   border: none;
   color: white;
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -38,7 +38,7 @@
 }
 .option_header {
   color: black;
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +60,7 @@
   justify-content: center;
 }
 .big_txt {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -72,9 +72,10 @@
   color: black;
   border-radius: 8px;
   background: #fff;
+  font-family: "Red Hat Display";
 }
 .form_about {
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -85,6 +86,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  width: 71%;
 }
 .puprle {
   font-size: 18px;
@@ -107,6 +109,16 @@
   color: #fff;
   border: none;
   border-radius: 8px;
+  font-family: "Red Hat Display";
+}
+.submit p {
+  font-family: "Syncopate";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
 }
 .video_items {
   position: relative;
@@ -124,7 +136,7 @@
   padding: 0px 0px 40px 0px;
 }
 .proyecto {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -134,7 +146,7 @@
 }
 .decription {
   display: flex;
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -156,16 +168,25 @@
   line-height: 1;
   color: white;
 }
+
 .slider img {
   width: 90%;
   margin: 0 auto;
   display: flex;
 }
+.question {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.question img {
+}
 .question_body {
   display: flex;
 }
 .block_body {
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -179,7 +200,7 @@
   padding: 0px 0px 24px 0px;
 }
 .por {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -188,7 +209,7 @@
   text-transform: uppercase;
 }
 .en {
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -208,7 +229,7 @@
   border: 2px solid #5f5f60;
 }
 .info {
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -226,7 +247,13 @@
 }
 .some_text {
   display: flex;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
 }
+
 .button_submit {
   width: 100%;
   padding: 20px 0px;
@@ -239,7 +266,7 @@
   font-weight: normal;
 }
 .button_submit p {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -256,7 +283,7 @@
   /* flex-wrap: wrap; */
 }
 .advantages_body p {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -270,7 +297,7 @@
 }
 .description_advantages_body li {
   padding: 16px 0px;
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -291,6 +318,7 @@
 }
 .inmuebles_body {
   background-color: #fff;
+  font-family: "Red Hat Display";
 }
 .inmuebles_body {
   padding: 24px;
@@ -303,7 +331,7 @@
   padding-bottom: 49px;
 }
 .status {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -315,7 +343,7 @@
 .status2 {
   color: #1a1a1c;
 
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -332,7 +360,7 @@
   align-items: center;
 }
 .price {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -434,7 +462,7 @@
   border-radius: 8px;
   color: var(--White, #fff);
   /* Button/L */
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -444,7 +472,7 @@
 }
 .chekbox2 {
   display: flex;
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -466,6 +494,14 @@
 }
 .question h3 {
   padding-bottom: 24px;
+  font-family: "Syncopate";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -2.8px;
+  text-transform: uppercase;
+  width: 50%;
 }
 .why_body {
   display: flex;
@@ -474,16 +510,18 @@
 .cart {
   border-radius: 12px;
   background: #7a67f2;
-  margin: 24px 24px;
+  margin: 10px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Set a fixed height for cart elements */
 }
 .cart_body {
-  width: 100% ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.reception_body {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-}
+
 .reception {
   width: 54%;
 }
@@ -498,7 +536,7 @@
   align-items: center;
 }
 .cart_header h2 {
-  font-family: Syncopate;
+  font-family: "Syncopate";
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -508,7 +546,6 @@
 }
 .cart_header p {
   color: #fff;
-
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -531,4 +568,160 @@
 }
 .flex {
   display: flex;
+}
+
+.palm {
+  object-fit: cover;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.palm img {
+  width: 93%;
+  height: 630px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.mira_text {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 0px 0px 40px 0px;
+}
+.videos {
+  color: #fff;
+  /* XL/Headline/HS */
+  font-family: Syncopate;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -2.8px;
+  text-transform: uppercase;
+}
+.promocionales {
+  font-family: "Red Hat Display";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.question_text {
+  font-family: "Syncopate";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2.8px;
+  text-transform: uppercase;
+  width: 65%;
+}
+.question2 {
+  display: flex;
+  flex-direction: column;
+}
+.palm2 {
+  display: flex;
+  object-fit: cover;
+}
+.palm2 img {
+  width: 594px;
+  height: 780px;
+}
+.reception {
+  width: 54%;
+  /* height: 100%; */
+  display: flex;
+  align-content: stretch;
+  align-items: flex-end;
+}
+.accardion_main {
+  padding: 200px 0px;
+}
+.accordion-title {
+  grid-column: span 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: var(--White, #fff);
+  font-family: Syncopate;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2.4px;
+  text-transform: uppercase;
+}
+.why2 {
+  padding: 0px 0px 200px 0px;
+}
+.accordion-title:hover {
+  opacity: 0.7;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-title {
+  grid-column: span 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.accordion-images {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.accordion-image {
+  position: relative;
+  padding: 10px 10px;
+}
+
+.accordion-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.accordion-image:hover img {
+  filter: grayscale(0%);
+}
+.accordion-content {
+  grid-column: span 5;
+  padding: 10px;
+}
+.Name {
+  font-family: Syncopate;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+}
+.jobTitle {
+  color: var(--White, #fff);
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.workDate {
+  color: #a8a8a8;
+
+  font-family: 'Red Hat Display';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import "./Header.css";
-
+import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import PlayCircleOutlinedIcon from "@mui/icons-material/PlayCircleOutlined";
 import { Navigation, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,8 +9,262 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Accardion from "../Accardion/Accardion";
 
 export default function Header() {
+  const accordionData = [
+    {
+      id: 1,
+      title: "Desarrolladores",
+
+      images: [
+        {
+          path: "./devolop/1p.png",
+          description: [
+            {
+              name: "Anton Polenyaka",
+              job_title: "CEO/CTO",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/2p.png",
+          description: [
+            {
+              name: "Lorenzo Gabriel Vignolo",
+              job_title: "Blockchain/ Backend",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/3p.png",
+          description: [
+            {
+              name: "Juan David Marin Sanchez",
+              job_title: "Blockchain",
+              work_date: "06.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/nophoto.png",
+          description: [
+            {
+              name: "Alexey Glazunov",
+              job_title: "Backend",
+              work_date: "08.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/nophoto.png",
+          description: [
+            {
+              name: "Nariman Islamov",
+              job_title: "Blockchain",
+              work_date: "06.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/4p.png",
+          description: [
+            {
+              name: "Antonio Palou",
+              job_title: "Blockchain",
+              work_date: "06.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/5p.png",
+          description: [
+            {
+              name: "Mansur Vakhabov",
+              job_title: "Blockchain",
+              work_date: "08.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/6p.png",
+          description: [
+            {
+              name: "Viacheslav Demchenko",
+              job_title: "Blockchain",
+              work_date: "08.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/7p.png",
+          description: [
+            {
+              name: "Ivan Krasnoshchekov",
+              job_title: "Blockchain",
+              work_date: "09.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/nophoto.png",
+          description: [
+            {
+              name: "Kirill Padalitsa",
+              job_title: "IOS móvil",
+              work_date: "08.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/8p.png",
+          description: [
+            {
+              name: "Iñaki Balaguer",
+              job_title: "Blockchain/ Backend",
+              work_date: "05.2023 - 10.2023",
+            },
+          ],
+        },
+        {
+          path: "./devolop/9p.png",
+          description: [
+            {
+              name: "Oleg Bedrin",
+              job_title: "Blockchain",
+              work_date: "08.2023 - 10.2023",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "diseño",
+
+      images: [
+        {
+          path: "./desino/1d.png",
+          description: [
+            {
+              name: "Anastasia Borodaenko",
+              job_title: "CDO",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/2d.png",
+          description: [
+            {
+              name: "Natalia Provorova",
+              job_title: "WEB ",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/3d.png",
+          description: [
+            {
+              name: "Roman Ivanov",
+              job_title: "WEB",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/4d.png",
+          description: [
+            {
+              name: "Kseniya Ramanchyk",
+              job_title: "WEB",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/5d.png",
+          description: [
+            {
+              name: "Maxim Sidorov",
+              job_title: "Móvil",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./devolop/nophoto.png",
+          description: [
+            {
+              name: "Anatoli Kozel",
+              job_title: "Móvil",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/6d.png",
+          description: [
+            {
+              name: "Marina Kukharenko",
+              job_title: "Creación de marca",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./desino/7d.png",
+          description: [
+            {
+              name: "Julia Vinogradova",
+              job_title: "Creación de marca",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "operación",
+
+      images: [
+        {
+          path: "./operacion/1o.png",
+          description: [
+            {
+              name: "Maxim Nekrasov",
+              job_title: "COO",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./operacion/2o.png",
+          description: [
+            {
+              name: "Antonio Navarro",
+              job_title: "CRO ",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./operacion/1o.png",
+          description: [
+            {
+              name: "Daniil Lazukov",
+              job_title: "Gerente de proyectos ",
+              work_date: "07.2023 - presente",
+            },
+          ],
+        },
+      ],
+    },
+  ];
   return (
     <div className="header">
       <div className="container">
@@ -57,13 +310,17 @@ export default function Header() {
             </p>
             <div className="form_about">
               <div className="como">
-                <p>DESCUBRE CÓMO PUEDES DISFRUTAR</p>
-                <p className="puprle">
-                  DEL CARIBE SIN PREOCUPACIONES Y SIN LAS COMPLICACIONES
+                <p>
+                  DESCUBRE CÓMO PUEDES DISFRUTAR
+                  <span className="puprle">
+                    DEL CARIBE SIN PREOCUPACIONES Y SIN LAS COMPLICACIONES
+                  </span>
+                  <span> </span>QUE COMPORTA GESTIONAR UN INMUEBLE
                 </p>
-                <p>QUE COMPORTA GESTIONAR UN INMUEBLE</p>
               </div>
-              <button className="submit">únete ahora</button>
+              <button className="submit">
+                <p>únete ahora</p>
+              </button>
             </div>
           </div>
         </div>
@@ -91,7 +348,6 @@ export default function Header() {
             </svg>
           </div>
         </div>
-
         <div className="introduccionalBody">
           <div className="main_int">
             <p className="proyecto">INTRODUCCIÓN AL PROYECTO</p>
@@ -484,7 +740,9 @@ export default function Header() {
           <div className="why_body">
             <div className="question">
               <h3>¿Por qué invertir ahora en la Riviera Maya?</h3>
-              <img src="./palm.png" alt="" />
+              <div className="palm">
+                <img src="./palm.png" alt="" />
+              </div>
             </div>
             <div className="reception">
               <div className="reception_body">
@@ -497,7 +755,7 @@ export default function Header() {
                           <img src="./Trophy.png" alt="" />
                         </div>
                       </div>
-                      <div className="cart_decsription pad">
+                      <div className="cart_decsription ">
                         México es el 6º país más visitado del mundo.
                       </div>
                     </div>
@@ -610,6 +868,222 @@ export default function Header() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="question">
+          <div className="question_body">
+            <p className="por">
+              ÚNETE A LA REVOLUCIÓN DE LAS INVERSIONES INMOBILIARIAS{" "}
+            </p>
+            <div className="block_body">
+              <h2 className="blockcahin2"></h2>
+              <p className="en">
+                No pierdas la oportunidad de disfrutar del paraíso. únete a
+                nosotros y descubre cómo puedes invertir de manera inteligente y
+                sin preocupaciones.
+              </p>
+              <div className="form_more">
+                <form action="" className="more_info">
+                  <div className="info">
+                    <label>
+                      <input
+                        className="text_input"
+                        type="text"
+                        value="Nombre*"
+                      />
+                    </label>
+                    <label>
+                      <input
+                        className="text_input"
+                        type="text"
+                        value="E-mail*"
+                      />
+                    </label>
+                    <label>
+                      <input
+                        className="text_input"
+                        type="text"
+                        value="Telefono*"
+                      />
+                    </label>
+                  </div>
+                  <div className="chekbox">
+                    <input type="checkbox" name="" id="" />
+                    <div className="some_text">
+                      <p className="robot">No soy un robot.</p>
+                      <p className="some">Pulse para continuar.</p>
+                    </div>
+                  </div>
+                  <button className="button_submit">
+                    <p>únete ahora</p>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mira">
+          <div className="mira_body">
+            <div className="mira_text">
+              <p className="videos">MIRA NUESTROS VIDEOS PROMOCIONALES</p>
+              <p className="promocionales">
+                Para conocer más sobre nuestra propuesta, mira nuestros videos
+                promocionales.
+              </p>
+            </div>
+
+            <div className="video_items">
+              <img src="./ocean.png"></img>
+              <div className="icon_play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                >
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="48.8889"
+                    stroke="white"
+                    stroke-width="2.22222"
+                  />
+                  <path
+                    d="M68.8906 51.1111L38.8906 68.4316L38.8906 33.7906L68.8906 51.1111Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="why2">
+          <div className="why_body">
+            <div className="question2">
+              <h3 className="question_text">Fortalezas de nuestra empresa</h3>
+              <div className="palm2">
+                <img src="./rent_table.png" alt="" />
+              </div>
+            </div>
+            <div className="reception">
+              <div className="reception_body">
+                <div className="flex">
+                  <div className="cart_body ">
+                    <div className="cart">
+                      <div className="cart_header">
+                        <h2>Experiencia</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription ">
+                        Expertos en diferentes areas empresareales se juntaron
+                        en un equipo integral para un éxito asegurado{" "}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="cart_body">
+                    <div className="cart white">
+                      <div className="cart_header ">
+                        <h2 className="white">Diversidad</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription ">
+                        Equipo multidisciplinario con amplia gama de habilidades
+                        y experiencias
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="cart_body">
+                    <div className="cart white">
+                      <div className="cart_header">
+                        <h2 className="white">Rentabilidad</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription pad2">
+                        Posibilidad de generar ingresos alqulando vuestas
+                        semanas a otras personas
+                      </div>
+                    </div>
+                  </div>
+                  <div className="cart_body">
+                    <div className="cart ">
+                      <div className="cart_header">
+                        <h2>Escalabilidad</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription">
+                        Nuestro modelo de negocios es altamente escalable, nos
+                        permite expandirse a nuevos paises con facilidad
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="cart_body">
+                    <div className="cart ">
+                      <div className="cart_header">
+                        <h2>Innovación</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription">
+                        Pensamos de forma creativa y como solucionar problemas
+                        de maneras nuevas y efectivas.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="cart_body">
+                    <div className="cart white">
+                      <div className="cart_header">
+                        <h2>Fidelización</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription">
+                        Nuestro objetivo es relación a largo plazo con los
+                        clientes gracias a excelente servicio y transparencia
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="cart_body">
+                    <div className="cart white">
+                      <div className="cart_header">
+                        <h2>Alianzas</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription">
+                        Asociación con otras empresas de la industria de la
+                        hospitalidad o del turismo amplía nuestas ofertas{" "}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="cart_body">
+                    <div className="cart ">
+                      <div className="cart_header">
+                        <h2>Liquidez</h2>
+                        <div className="icon"></div>
+                      </div>
+                      <div className="cart_decsription">
+                        Nuestro timesharing incluye opción de reventa o
+                        intercambio, lo que podría hacer que la inversión sea
+                        más líquida y atractiva
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="accard">
+          <div key={accordionData.id} className="accordion">
+            {accordionData.map(({ title, content, images }) => (
+              <Accardion title={title} content={content} images={images} />
+            ))}
           </div>
         </div>
       </div>
