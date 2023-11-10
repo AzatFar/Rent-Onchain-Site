@@ -8,7 +8,7 @@ export default function Accordion({ title, content, images }) {
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           <div>{title}</div>
-          <div>{isActive ? "-" : "+"}</div>
+          <div className={isActive ? "cross" : "plus"}></div>
         </div>
         <div className="grid_sustem">
           {images && isActive && (

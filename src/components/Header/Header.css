@@ -719,9 +719,216 @@
 .workDate {
   color: #a8a8a8;
 
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 23.4px */
+}
+.accordion-item {
+  padding: 24px 0px;
+  border-bottom: 1px solid #5f5f60;
+}
+.accard2 {
+  padding: 200px 0px;
+}
+.plus::before {
+  content: "+";
+}
+
+.cross::before {
+  content: "\00D7"; /* Знак креста */
+  transform: rotate(45deg);
+}
+.time_forn_body {
+  display: flex;
+  justify-content: space-between;
+}
+.time_form_mauin {
+  width: 54%;
+  background-color: #fff;
+  border-radius: 12px;
+  color: black;
+  padding: 24px;
+}
+.venta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.time {
+  margin: 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background: #6957da;
+  padding: 16px 24px;
+}
+.D {
+  color: var(--White, #fff);
+  font-family: "Syncopate";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+.D span {
+  color: #cac2fa;
+  /* XL/Headline/HM */
+  font-family: "Syncopate";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+.L {
+  font-size: 50px;
+  color: #cac2fa;
+  /* border-left: 5px solid #cac2fa; */
+  padding-left: 20px; /* Измените это значение на нужный вам отступ */
+}
+.compra {
+  color: #1a1a1c;
+  font-family: "Red Hat Display";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 31.2px */
+}
+.rent_eco {
+  color: #6957da;
+  font-family: "Red Hat Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.info3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.text_input3 {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 2px solid #5f5f60;
+  width: 90%;
+}
+.footer {
+  background-color: #fff;
+  border-radius: 28px 28px 0px 0px;
+  color: black;
+}
+.body_foter {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+.contact h3 {
+  padding-bottom: 16px;
+}
+.Oficina h4 {
+  /* padding-bottom: 16px; */
+}
+.plaza {
+  padding: 16px 0px;
+}
+/* .Redes p { 
+  padding: 12px 0px;
+} */
+.Redes .s {
+  padding: 12px 0px;
+}
+
+.Redes .w {
+  padding-bottom: 12px;
+}
+.E-mail h4 {
+  padding: 12px 0px;
+}
+
+.menu23 h3 {
+  padding-bottom: 12px;
+}
+.menu23 p {
+  padding-bottom: 12px;
+}
+
+.form_footer {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.contact {
+  width: 33%;
+}
+.info5 {
+  padding: 12px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.form_footer h3 {
+  color: #1a1a1c;
+  font-family: Syncopate;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+}
+.text_input4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #5f5f60;
+  color: #a8a8a8;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+.submit4 {
+  border: none;
+  display: flex;
+  padding: 32px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #7a67f2;
+}
+.submit4 p {
+  color: #fff;
+
+  font-family: "Syncopate";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  letter-spacing: -2.2px;
+  text-transform: uppercase;
 }

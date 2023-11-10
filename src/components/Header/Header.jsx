@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Accardion from "../Accardion/Accardion";
+import Accordion2 from "../Accardion/Accordion2";
 
 export default function Header() {
   const accordionData = [
@@ -228,7 +229,7 @@ export default function Header() {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "operación",
 
       images: [
@@ -253,7 +254,7 @@ export default function Header() {
           ],
         },
         {
-          path: "./operacion/1o.png",
+          path: "./operacion/3o.png",
           description: [
             {
               name: "Daniil Lazukov",
@@ -263,6 +264,134 @@ export default function Header() {
           ],
         },
       ],
+    },
+    {
+      id: 4,
+      title: "comercialización",
+
+      images: [
+        {
+          path: "/devolop/nophoto.png",
+          description: [
+            {
+              name: "Claudio Morgan",
+              job_title: "CMO",
+              work_date: "05.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "/devolop/nophoto.png",
+          description: [
+            {
+              name: "Andrea Dominguez",
+              job_title: "CM ",
+              work_date: "06.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./comercion/2c.png",
+          description: [
+            {
+              name: "MD Delwar Hossain",
+              job_title: "CM ",
+              work_date: "09.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "./comercion/1c.png",
+          description: [
+            {
+              name: "Xenia Nekrasova",
+              job_title: "CEO",
+              work_date: "08.2023 - presente",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "cumplimiento",
+
+      images: [
+        {
+          path: "/devolop/nophoto.png",
+          description: [
+            {
+              name: "CFO",
+              job_title: "CMO",
+              work_date: "06.2023 - presente",
+            },
+          ],
+        },
+        {
+          path: "/devolop/nophoto.png",
+          description: [
+            {
+              name: "“TechnoLaw”",
+              job_title: "CLO ",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+  const accordionData2 = [
+    {
+      id: 1,
+      title: "¿Cómo realizar la inversión?",
+      description:
+        "Invierte a partir de 10,000 € (sin ningún gasto adicional en toda la vida) y obtendrás el derecho de uso y disfrute de una semana al año de forma vitalicia en cualquiera de nuestras viviendas disponibles",
+    },
+
+    {
+      id: 2,
+      title: "¿Qué ocurre si quiero vender mi inversión?",
+      description:
+        "Nuestro proyecto se basa en una sólida estrategia de crecimiento y rentabilidad teniendo en cuenta la plusvalía de la zona, el incremento natural del valor de los inmuebles y la libertad de poder ceder, traspasar, donar, vender y alquilar ese derecho adquirido para toda la vida",
+    },
+    {
+      id: 3,
+      title: "¿Qué garantías de rentabilidad ofrecen?",
+      description:
+        "Seríamos nosotros los primeros interesados en poder adquirir tu derecho pero, también, podrás venderlo a quien tu quieras o utilizar nuestro marketplace u otros similares donde seguro que encontrarás alguien interesado",
+    },
+    {
+      id: 4,
+      title: "¿Si un año no puedo o no quiero ir, ¿qué puedo hacer?",
+      description:
+        "Puedes cederlo/regalarlo para que alguien querido lo pueda disfrutar o, si quieres obtener un beneficio y no preocuparte de nada, nosotros nos encargamos de alquilarlo para tí en nuestro marketplace",
+    },
+    {
+      id: 5,
+      title: "¿Es necesario que viaje a México para algún trámite?",
+      description:
+        "Depende de cada país, nosotros podemos asesorarte personalmente.",
+    },
+    {
+      id: 6,
+      title: "¿Cuándo puedo empezar a disfrutar de mi sueño?",
+      description: "NO. Todo se hará vía online",
+    },
+    {
+      id: 7,
+      title: "¿Puedo llevar a mi mascota a mi vivienda?",
+      description: "A partir del segundo mes de haber efectuado el ingreso",
+    },
+    {
+      id: 8,
+      title: "¿Qué medidas de seguridad tiene el complejo?",
+      description:
+        " Por supuesto, aunque ten en cuenta que cada vivienda podría tener alguna restricción al respecto, revisa, por favor, las condiciones de uso y disfrute",
+    },
+    {
+      id: 9,
+      title: "¿Qué garantía tengo de que mi inversión está en buenas manos?",
+      description:
+        "Hay seguridad privada fija en la entrada y de ronda por todo el perímetro",
     },
   ];
   return (
@@ -1086,7 +1215,163 @@ export default function Header() {
             ))}
           </div>
         </div>
+        <div className="accard2">
+          <div key={accordionData2.id} className="accordion">
+            {accordionData2.map(({ title, description }) => (
+              <Accordion2 title={title} description={description} />
+            ))}
+          </div>
+        </div>
+        <div className="time_forn">
+          <div className="time_forn_body">
+            <div className="Oportunidad">
+              <h3>Oportunidad unica</h3>
+            </div>
+            <div className="time_form_mauin">
+              <form action="#" className="nft_start">
+                <p className="venta">
+                  Venta de NFT de TimeSharing comienza el 1 de enero de 2024
+                </p>
+                <div className="time">
+                  <div className="D">
+                    3 <span>D</span>
+                  </div>
+                  <div className="L">I</div>
+
+                  <div className="D ">
+                    15 <span>H</span>
+                  </div>
+                  <div className="L">I</div>
+
+                  <div className="D ">
+                    51 <span>M</span>
+                  </div>
+                  <div className="L">I</div>
+                  <div className="D ">
+                    44 <span>S</span>
+                  </div>
+                </div>
+                <div className="compra">
+                  <p>
+                    Compra 10 y obten 11, Hasta el 31-12-23 o agotamiento de
+                    plazas disponibles, regalamos una semana si inviertes en 10
+                    semanas (entre las tuyas y las que recomiendes)
+                  </p>
+                </div>
+                <div className="rent_eco">
+                  RENT ONCHAIN Es una inversión eco-sos-teligente porque permite
+                  el aprovechamiento total de la vivienda.
+                </div>
+
+                <div className="info3">
+                  <label>
+                    <input
+                      className="text_input3"
+                      type="text"
+                      value="Nombre*"
+                    />
+                  </label>
+                  <label>
+                    <input
+                      className="text_input3"
+                      type="text"
+                      value="E-mail*"
+                    />
+                  </label>
+                  <label>
+                    <input
+                      className="text_input3"
+                      type="text"
+                      value="Telefono*"
+                    />
+                  </label>
+                </div>
+                <div className="chekbox">
+                  <input type="checkbox" name="" id="" />
+                  <div className="some_text">
+                    <p className="robot">No soy un robot.</p>
+                    <p className="some">Pulse para continuar.</p>
+                  </div>
+                </div>
+                <button className="button_submit">
+                  <p>únete ahora</p>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer className="footer">
+        <div className="container">
+          <div className="body_foter">
+            <div className="contact">
+              <h3>Contacta</h3>
+              <div className="Oficina">
+                <h4>Oficina</h4>
+                <p className="plaza">
+                  Plaza Can Bassa,1 Granollers C.P. 08402 Barcelona, España
+                </p>
+              </div>
+              <div className="Redes">
+                <h4>Redes sociales</h4>
+                <p className="s">Telegram</p>
+                <p className="w">Instagram</p>
+              </div>
+              <div className="E-mail">
+                <h4>E-mail</h4>
+                <p>sales@rentoncha.in</p>
+              </div>
+            </div>
+            <div className="menu23">
+              <h3>Menú</h3>
+              <p>Proyecto</p>
+              <p>Beneficios</p>
+              <p>Inmuebles</p>
+              <p>Riviera Maya</p>
+              <p>Videos</p>
+              <p>Fortalezas</p>
+              <p>Equipo</p>
+              <p>FAQ</p>
+              <p>Pre-Venta</p>
+            </div>
+            <div className="form_footer">
+              <h3>
+                SI TE INTERESA RECIBIR MÁS INFORMACIÓN SOBRE RENT ONCHAIN,
+                APÚNTANTE A NUESTRO BOLETÍN INFORMATIVO Y SÉ EL PRIMERO EN
+                CONOCER NUESTRAS ÚLTIMAS ACTUALIZACIONES Y OFERTAS ESPECIALES
+              </h3>
+              <form action="" className="more_info5">
+                <div className="info5">
+                  <label>
+                    <input
+                      className="text_input4"
+                      type="text"
+                      value="Nombre*"
+                    />
+                  </label>
+                  <label>
+                    <input
+                      className="text_input4"
+                      type="text"
+                      value="E-mail*"
+                    />
+                  </label>
+                  <label>
+                    <input
+                      className="text_input4"
+                      type="text"
+                      value="Telefono*"
+                    />
+                  </label>
+                  <button className="submit4">
+                    <p>enviar</p>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
